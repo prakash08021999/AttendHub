@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:elevation="5dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="9dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/studentname"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="75dp"
+        android:elevation="15dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+    <LinearLayout
+        android:layout_height="46dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/studentdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:backgroundTint="#FF00FF00"
+            app:srcCompat="@drawable/student" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/depclass"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:elevation="15dp" />
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textureView"
+        android:layout_alignParentBottom="true"
+        android:elevation="10dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/Capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            app:backgroundTint="?attr/colorBackgroundFloating"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/add" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/Cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                app:backgroundTint="?android:attr/colorBackground"
+                app:srcCompat="@drawable/wrong" />
+
+            <View
+                android:layout_width="299dp"
+                android:layout_height="match_parent"
+                android:layout_weight="11" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                app:backgroundTint="@android:color/background_light"
+                app:srcCompat="@drawable/write" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

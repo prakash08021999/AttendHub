@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prakash.copyprint">
+    <supports-screens android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE">
+    </uses-permission>
+    <uses-feature android:name="android.hardware.camera2.full" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus" android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".loginactivity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.prakash.copyprint.loginactivity.ForgetPassword"/>
+        <activity android:name="com.example.prakash.copyprint.Camera"
+            android:theme="@style/MyTheam"/>
+        <activity android:name="com.example.prakash.copyprint.student.StudentTable"/>
+        <activity android:name="com.example.prakash.copyprint.loginactivity.SignUpActivity"/>
+        <activity android:name="com.example.prakash.copyprint.FaceRecognitionCamera"/>
+        <activity android:name="com.example.prakash.copyprint.student.StudentList"/>
+        <activity android:name="com.example.prakash.copyprint.MainActivity"/>
+        <activity android:name="com.example.prakash.copyprint.all_dialogcollection.AddSubjectDialog" />
+        <activity android:name="com.example.prakash.copyprint.TeacherProfile"/>
+
+
+
+    </application>
+
+</manifest>

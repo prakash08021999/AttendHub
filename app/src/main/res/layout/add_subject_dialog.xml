@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4aedc4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditText
+            android:id="@+id/lectuers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="211dp"
+            android:ems="10"
+            android:hint="Total Lecture"
+            android:inputType="textPersonName"
+            android:textColor="@color/background_color" />
+
+        <Spinner
+            android:id="@+id/Subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lectuers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="79dp"
+            android:backgroundTint="@color/background_color"
+            android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Subject"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:hint="Enter Time"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/sclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/lectuers"
+        android:layout_marginTop="27dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sclass"
+        android:layout_marginTop="80dp"
+        android:background="@color/white"
+        android:text="Submit" />
+
+</RelativeLayout>
